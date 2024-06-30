@@ -1,0 +1,61 @@
+@scope (.vars) to (table) {
+
+	caption {
+		text-align: start;
+		font-weight: bold;
+		padding-block-end: 1em;
+	}
+
+	th {
+		text-align: start;
+		font-weight: normal;
+	}
+
+	td {
+		vertical-align: top;
+		border-top: solid thin CanvasText;
+		padding-block: 0.5em;
+		
+		&:first-child {
+			min-width: 30ch;
+		}
+	}
+
+}
+
+:not(td:nth-child(2)) summary {
+	font-family: monospace;
+	
+	details[open] > & {
+		margin-block-end: 0.5em;
+	}
+}
+
+
+.iOS-CSS-font-size::before {
+	content: "[[font-size]]";
+}
+
+body:has(.systemMessage) {
+	display: grid;
+	place-content: center;
+}
+
+/* Multiple selection / Loading... / No selection */
+.systemMessage {
+ 	-webkit-user-select: none;
+	cursor: default;
+}
+
+plaintext {
+	max-width: 100%;
+	padding: 1em;
+	overflow-x: auto;
+	color: Canvas;
+	background-color: CanvasText;
+	
+	&::after {
+		content: "ignore trailing </body></html> plaintext is weird!";
+		color: deeppink;
+	}
+}
