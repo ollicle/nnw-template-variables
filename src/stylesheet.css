@@ -47,15 +47,10 @@ body:has(.systemMessage) {
 	cursor: default;
 }
 
-plaintext {
+xmp {
 	max-width: 100%;
 	padding: 1em;
 	overflow-x: auto;
 	color: Canvas;
 	background-color: CanvasText;
-	
-	&::after {
-		content: "ignore trailing </body></html> plaintext is weird!";
-		color: deeppink;
-	}
 }
