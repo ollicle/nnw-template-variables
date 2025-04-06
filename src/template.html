@@ -216,6 +216,29 @@
 				[[body]]
 			</td>
 		</tr>
+		<tr>
+			<td colspan="2">
+				<details>
+					<summary>body source</summary>
+					<div>
+						<xmp>[[body]]</xmp>
+					</div>
+				</details>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<details>
+					<summary>Rendered template source</summary>
+					<textarea id="fullSource" value="Enable JavaScript"></textarea>
+				</details>
+			</td>
+		</tr>
 	</tbody>
 </table>
-<xmp>[[body]]</xmp>
+
+<script>
+	Object.assign(document.getElementById("fullSource"), {
+		value: document.documentElement.innerHTML
+	});
+</script>
