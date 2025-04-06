@@ -6,7 +6,7 @@ Useful if you are [building a NetNewsWire theme](https://github.com/Ranchero-Sof
 
 ## Install
 
-1. Download: <a href="https://github.com/ollicle/nnw-template-variables/raw/main/dist/TemplateVariables.nnwtheme_v2.zip">TemplateVariables.nnwtheme_v2.zip</a>
+1. Download: <a href="https://github.com/ollicle/nnw-template-variables/raw/main/dist/TemplateVariables.nnwtheme_v3.zip">TemplateVariables.nnwtheme_v3.zip</a>
 2. Unzip it
 3. Open **TemplateVariables.nnwtheme** and follow the prompts.
 4. Select “TemplateVariables” in the NewsWire theme select. 
