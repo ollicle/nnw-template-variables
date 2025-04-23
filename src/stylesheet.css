@@ -49,19 +49,18 @@ body:has(.xxLargeText) {
 			width: 26ch;
 		}
 	}
+	
+	tr:not(:has(> td:empty), :has(xmp:empty)) {
+		summary {
+			opacity: 1;
+			font-weight: bold;
+		}
+	}
 
 	td {
 		vertical-align: top;
 		border-top: solid thin color-mix(in srgb, transparent, CanvasText 30%);
 		padding-block: 0.5em;
-		
-		&:has(+ td:not(:empty)) {
-		
-			summary {
-				opacity: 1;
-				font-weight: bold;
-			}
-		}
 	}
 	
 	summary {
